@@ -5,13 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
 
-        if (a%4==0 || (a%400==0 && a%100!=0)) {
-            System.out.println("true");
+        if (a%4!=0 || (a%400!=0 && a%100==0)) {
+            System.out.println("false");
             
         }
         else {
         
-            System.out.println("false");
+            System.out.println("true");
             
         }
     }
