@@ -8,7 +8,7 @@ public class Main {
         int b1 = sc.nextInt();
         char b2 = sc.next().charAt(0);
 
-        if ((a1 >=19 || b1>=19) &&(a2 =='M' || b2=='M')) {
+        if ((a1 >=19 && a2 =='M') || ( b1>=19 && b2=='M')) {
             System.out.println("1");
         }
         else {
