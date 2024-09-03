@@ -8,7 +8,7 @@ public class Main {
 
 
         for (int i = a ; i <= b; ) {
-            System.out.print(i+' ');
+            System.out.print(i+" ");
             if (i%2==1){
                 i=i+i;
             }
