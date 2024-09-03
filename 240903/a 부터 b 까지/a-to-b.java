@@ -13,7 +13,7 @@ public class Main {
                 i=i+i;
             }
             else{
-                i+3;
+                i = i+3;
             }
         }
 
