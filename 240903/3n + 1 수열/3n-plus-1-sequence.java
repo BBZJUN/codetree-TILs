@@ -8,11 +8,13 @@ public class Main {
         while (true) {
             if (n % 2 == 0) {
                 n = n / 2;
+                c++;
             }
             else {
                 n = n*3 +1;
+                c++;
             }
-            c++;
+            
             if(n==1){
                 break;
             }
