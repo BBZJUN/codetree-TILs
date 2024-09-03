@@ -17,7 +17,7 @@ public class Main {
                 
             
         }
-        System.out.printf(sum);
+        System.out.print(sum);
 
     }
 }
