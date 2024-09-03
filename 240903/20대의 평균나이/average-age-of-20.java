@@ -16,6 +16,6 @@ public class Main {
             }
             
         }
-        System.out.printf("%.2f",s/c);
+        System.out.printf("%.2f",(double)s/c);
     }
 }
