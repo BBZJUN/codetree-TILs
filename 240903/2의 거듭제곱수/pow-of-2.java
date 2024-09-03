@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int c= 0;
+        while (true) {
+            n=n/2;
+            c++;
+            if(n==1){
+                break;
+            }
+            
+            
+        }
+        System.out.println(c);
+    }
+}
