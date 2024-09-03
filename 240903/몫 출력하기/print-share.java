@@ -8,8 +8,8 @@ public class Main {
         int c = 0;
         while (true) {
             n = sc.nextInt();
-            if (n%2 == 1) {
-                System.out.println((int)n/2);
+            if (n%2 == 0) {
+                System.out.println(n/2);
                 c++;
                 if(c>2){
                     break;
