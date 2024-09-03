@@ -6,12 +6,16 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int sum = 0;
-        int c=0;
+
+        if(a>b){
+            int m = a;
+            a= b;
+            b= m;
+        }
 
         for (int i = a ; i <= b; i++) {
 
            if(i%5==0){
-            c++;
             sum+=i;
            }
                 
