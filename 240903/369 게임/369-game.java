@@ -7,7 +7,7 @@ public class Main {
 
 
         for (int i = 1 ; i <= n; i++) {
-            if (i%3==0 || i%10==3 || i%10==6 || i%3==9){
+            if (i%3==0 || i%10==3 || i%10==6 || i%3==9 || i/10%10==3 || i/10%10==6 || i/10%3==9){
                 System.out.print(0+" ");
             }
             else{
