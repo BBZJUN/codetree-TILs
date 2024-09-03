@@ -9,6 +9,7 @@ public class Main {
         if (a>0){
             for (int i = 1; i <=b; i++) {
                 System.out.print(a);
+            }
         }
         else{
             System.out.print(0);
