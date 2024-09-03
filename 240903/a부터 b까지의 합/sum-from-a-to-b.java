@@ -8,7 +8,7 @@ public class Main {
         int sum = 0;
 
         for (int i = a ; i <= b; i++) {
-           sum+=a;
+           sum+=i;
             
         }
         System.out.println(sum);
