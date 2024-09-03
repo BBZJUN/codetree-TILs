@@ -7,7 +7,6 @@ public class Main {
         int b = sc.nextInt();
         int sum = 0;
         for (int i = a ; i <= b; i++) {
-           int x = sc.nextInt();
            if(i%6==0&&i%8!=0)
                 sum+=i;                
             
