@@ -9,13 +9,13 @@ public class Main {
 
         boolean satisfied = true;
         for (int i = a; i <= b; i++) {
-            if (c % i == 0) {
+            if (i % c == 0) {
                 
                 satisfied = false;
                 break;
             }
         }
-        if (satisfied == false) {
+        if (satisfied == true) {
             System.out.println("YES");
         }
         else {
