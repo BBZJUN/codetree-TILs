@@ -5,10 +5,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        int[] arr = new int[10];  // 크기가 n인 실수형을 저장하기 위한 배열 선언
+        int[] arr = new int[n];  // 크기가 n인 실수형을 저장하기 위한 배열 선언
 
         int sum=0;
-        int c=0;
+        int g=0;
 
         for (int i = 0; i < n; i++) {
             int a = sc.nextInt();
@@ -21,7 +21,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
 
             if (arr[i]/4>=0){
-                c++;
+                g++;
                 System.out.println("pass");
             }
             else{
@@ -31,7 +31,7 @@ public class Main {
             
         }
 
-        System.out.printf("%d", c);
+        System.out.printf("%d", g);
         
         
     }
