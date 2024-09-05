@@ -12,7 +12,6 @@ public class Main {
             arr[i] = sc.nextInt();
             if(arr[i]==0){
                 check = i;
-                break;
             }
         }
 
