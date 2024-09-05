@@ -14,6 +14,7 @@ public class Main {
             sum += arr[i];
         }
         double avg = sum/n;
+        System.out.printf("%.1f\n",avg);
         if (sum>=4.0){
             System.out.println("Perfect");
         }
