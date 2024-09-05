@@ -20,7 +20,7 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
 
-            if (arr[i]/4>=0){
+            if (arr[i]/4>=60){
                 g++;
                 System.out.println("pass");
             }
