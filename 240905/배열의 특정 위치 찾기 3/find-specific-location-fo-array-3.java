@@ -6,7 +6,7 @@ public class Main {
         int[] arr = new int[100];
 
         int n = sc.nextInt();
-        int check;
+        int check=0;
         for (int i = 0; i < 100; i++) {
 
             arr[i] = sc.nextInt();
