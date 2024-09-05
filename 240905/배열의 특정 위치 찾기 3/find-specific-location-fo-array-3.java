@@ -15,6 +15,6 @@ public class Main {
             }
         }
 
-        System.out.println(arr[i - 1]+arr[i - 2]+arr[i - 3]);
+        System.out.println(arr[check - 1]+arr[check - 2]+arr[check - 3]);
     }
 }
