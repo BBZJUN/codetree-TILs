@@ -5,7 +5,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[100];
 
-        int n = sc.nextInt();
         int check=0;
         for (int i = 0; i < 100; i++) {
 
