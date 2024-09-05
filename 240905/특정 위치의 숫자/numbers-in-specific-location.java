@@ -11,11 +11,10 @@ public class Main {
 
         }
 
-        System.out.print(arr[2]+arr[4]+arr[9]);         
+        System.out.print((arr[2]+arr[4]+arr[9]));         
             
         }
 
         
         
     }
-}
