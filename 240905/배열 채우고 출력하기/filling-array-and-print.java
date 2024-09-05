@@ -9,7 +9,7 @@ public class Main {
             x[i]=val;
         }
         for (int i = 9 ; i>=0; i--){
-            System.out.print(x[i]+" ");
+            System.out.print(x[i]);
         }
     }
 }
