@@ -21,6 +21,6 @@ public class Main {
             
         }
 
-        System.out.printf("%d %.1f"sum2,(double)sum3/3);
+        System.out.printf("%d %.1f",sum2,(double)sum3/3);
     }
 }
