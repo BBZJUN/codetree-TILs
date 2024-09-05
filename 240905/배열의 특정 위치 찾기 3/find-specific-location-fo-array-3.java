@@ -6,11 +6,12 @@ public class Main {
         int[] arr = new int[100];
 
         int n = sc.nextInt();
+        int check;
         for (int i = 0; i < 100; i++) {
 
             arr[i] = sc.nextInt();
             if(arr[i]==0){
-                int check = i;
+                check = i;
                 break;
             }
         }
