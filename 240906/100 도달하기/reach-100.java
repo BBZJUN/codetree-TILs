@@ -12,7 +12,7 @@ public class Main {
             arr[i] = arr[i-1]+arr[i-2];
             if(arr[i]>100){
                 c=i;
-                break
+                break;
             }
         }
         for (int i=0;i<=c;i++){
