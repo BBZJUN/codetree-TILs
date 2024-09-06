@@ -19,7 +19,7 @@ public class Main {
         }
 
 
-        for (int i = 0; i<c; i++){
+        for (int i = 0; i<c+1; i++){
             System.out.print(arr[i]+" ");
         }
     }
