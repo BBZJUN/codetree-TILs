@@ -10,6 +10,7 @@ public class Main {
             arr[i] = sc.nextInt();
             if (arr[i]==0){
                 ch = i;
+                break;
             }
         }
         for (int i=0;i<ch;i++){
