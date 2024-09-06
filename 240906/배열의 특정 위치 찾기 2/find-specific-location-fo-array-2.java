@@ -8,17 +8,17 @@ public class Main {
         int big1=0;
         int big2=0;
 
-        for (int = 0 ; i<10; i++){
+        for (int i = 0 ; i<10; i++){
             arr[i] = sc.nextInt();
         }
 
-        for (int = 0 ; i<10; i+=2){
+        for (int i = 0 ; i<10; i+=2){
             if (arr[i]>big1){
                 big1=arr[i];
             }
         }
 
-        for (int = 1 ; i<10; i+=2){
+        for (int i = 1 ; i<10; i+=2){
             if (arr[i]>big2){
                 big2=arr[i];
             }
