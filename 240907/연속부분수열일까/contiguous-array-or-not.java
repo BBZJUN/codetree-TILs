@@ -29,9 +29,7 @@ public class Main {
                             end = 1;
                         }
                     }
-                    else{
-                        break;
-                    }
+
                 }
             }
         }
