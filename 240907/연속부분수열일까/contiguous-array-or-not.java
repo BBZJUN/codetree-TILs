@@ -9,7 +9,7 @@ public class Main {
         int[] A = new int[n1];
         int[] B = new int[n2];
 
-        int check = 0;
+        int check = 1;
 
         for (int i = 0; i<n1;i++){
             A[i] = sc.nextInt();
@@ -20,23 +20,21 @@ public class Main {
             B[i] = sc.nextInt();
         }
 
-        for (int i = 0; i<n2; i++){
-            for (int j = 0 ; j<n1 ;j++){
-                if(B[i]==A[j]){
-                    check++;
-                    if(check==n2){
+        for (int i = 0 ;i<n1;i++){
+            if (B[0]==A[i]){
+                for (int j = 0 ; j<n2;j++){
+                    if (B[j]==A[i+j]){
+                        check = 0;
+                    }
+                    else{
+                        check = 1;
                         break;
                     }
                 }
-                else{
-                    check = 0;
-                }
-                if(check==n2){
-                        break;
-                    }
             }
         }
-        if(check==n2){
+
+        if(check==0){
             System.out.print("Yes");
         }
         else{
