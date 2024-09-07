@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
-        int[] countArr = new int[11];
+        int[] countArr = new int[10];
 
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
@@ -17,7 +17,7 @@ public class Main {
         }
 
         // 개수 출력
-        for (int i = 1; i < 11; i++) {
+        for (int i = 1; i < 10; i++) {
             System.out.println(countArr[i]);
         }
     }
