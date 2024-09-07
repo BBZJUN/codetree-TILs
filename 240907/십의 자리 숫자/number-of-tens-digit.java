@@ -21,7 +21,7 @@ public class Main {
         }
 
         // 개수 출력
-        for (int i = 1; i < 11; i++) {
+        for (int i = 1; i < 10; i++) {
             System.out.println(i+" - "+countArr[i]);
         }
     }
