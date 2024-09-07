@@ -25,7 +25,7 @@ public class Main {
                 for (int j = 0 ; j<n2 && (i+j)<n1;j++){
                     if (B[j]==A[i+j] && (i+j)<n1){
                         if (j==n2-1){
-                            System.out.print("Yes");
+
                             end = 1;
                         }
                     }
@@ -36,6 +36,9 @@ public class Main {
 
         if(end==0){
             System.out.print("No");
+        }
+        else{
+                                        System.out.print("Yes");
         }
 
 
