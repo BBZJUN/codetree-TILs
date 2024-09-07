@@ -10,7 +10,7 @@ public class Main {
         int[] B = new int[n2];
 
         int check = 1;
-
+        int end = 0;
         for (int i = 0; i<n1;i++){
             A[i] = sc.nextInt();
         }
@@ -24,22 +24,22 @@ public class Main {
             if (B[0]==A[i]){
                 for (int j = 0 ; j<n2;j++){
                     if (B[j]==A[i+j] && (i+j)<n1){
-                        check = 0;
+                        if (j==n2-1){
+                            System.out.print("Yes");
+                            end = 1;
+                        }
                     }
                     else{
-                        check = 1;
                         break;
                     }
                 }
             }
         }
 
-        if(check==0){
-            System.out.print("Yes");
-        }
-        else{
+        if(end==0){
             System.out.print("No");
         }
+
 
 
         
