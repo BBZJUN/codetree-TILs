@@ -31,6 +31,9 @@ public class Main {
                 else{
                     check = 0;
                 }
+                if(check==n2){
+                        break;
+                    }
             }
         }
         if(check==n2){
