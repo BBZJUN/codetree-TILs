@@ -10,12 +10,17 @@ public class Main {
             x[i] = sc.nextInt();
         }
 
-
+        int ch = 0;
         for (int i=0; i<n -1;i++){
+            ch = 0;
             for (int j = i+1 ; j<n;j++){
                 if(x[i]==x[j]){
-                    x[i]=-1;
+                    ch = 1;
+                    x[j] = -1;
                 }
+            }
+            if ( ch==1){
+                x[i] = -1;
             }
         }
 
