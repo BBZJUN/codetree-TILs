@@ -11,7 +11,7 @@ public class Main {
         }
 
 
-        for (int i=0; i<n;i++){
+        for (int i=0; i<n -1;i++){
             for (int j = i+1 ; j<n;j++){
                 if(x[i]==x[j]){
                     x[i]=-1;
@@ -21,7 +21,7 @@ public class Main {
 
         int max = x[0];
 
-        for (int i=0; i<n;i++){
+        for (int i=0; i<n; i++){
             if (max < x[i]){
                 max = x[i];
             }
