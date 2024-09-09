@@ -16,6 +16,13 @@ public class Main {
                 min = x[i];
             }
         }
-        System.out.print(min);
+
+        int c = 0;
+        for (int i=0; i<n;i++){
+            if (min == x[i]){
+                c++;
+            }
+        }
+        System.out.print(min+" "+c);
     }
 }
