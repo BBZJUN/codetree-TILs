@@ -13,7 +13,7 @@ public class Main {
         }
 
 
-        int r = -1;
+        int r = 0;
         for (int i=0; i<n-1 ;i++){
             for (int j=i+1; j<n; j++){
                 if ((x[i]-x[j]) > r){
