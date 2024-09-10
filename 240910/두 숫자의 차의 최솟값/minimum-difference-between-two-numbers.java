@@ -17,7 +17,7 @@ public class Main {
         for (int i=n-1; i>=0 ;i--){
             for (int j=0; j<i; j++){
                 if ((x[i]-x[j]) < r && (x[i]-x[j])>0){
-                    r = x[j]-x[i];
+                    r = x[i]-x[j];
                 }
             }
         }
