@@ -13,7 +13,7 @@ public class Main {
             if (check==0)
             {
                 for (int j = 0 ; j<n;j++){
-                    x[i][j]=num++;
+                    x[j][i]=num++;
                 }
                 check = 1;
             }
@@ -21,7 +21,7 @@ public class Main {
             else
             {
                 for (int j=n-1; j>=0; j--){
-                    x[i][j]=num++;
+                    x[j][i]=num++;
                 }
                 check = 0;
             }
