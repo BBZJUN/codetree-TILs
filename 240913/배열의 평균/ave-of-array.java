@@ -5,8 +5,8 @@ public class Main {
         // 여기작성해주세요.
         int[][] x = new int[2][4];
         Scanner sc = new Scanner(System.in);
-        int[] ii = new int[2];
-        int[] jj = new int[4];
+        double[] ii = new double[2];
+        double[] jj = new double[4];
         int tsum = 0;
         int s = 0;
 
