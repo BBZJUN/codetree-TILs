@@ -28,7 +28,7 @@ public class Main {
 
         }
 
-        if (check==1){
+        if (n>1){
 
             g=g-t;
         }
