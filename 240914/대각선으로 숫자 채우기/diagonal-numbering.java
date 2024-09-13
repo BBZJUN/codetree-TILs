@@ -28,10 +28,8 @@ public class Main {
 
         }
 
-        if (n!=1){
-
-            g=g-t;
-        }
+        g=g-t;
+        
         for (int i=0;i<n;i++){
             k=i;
             w = m-1;
