@@ -29,6 +29,9 @@ public class Main {
                 System.out.print(x[i][j] + " ");
             }
             System.out.println();
+            if(i==j){
+                continue;
+            }
         }
     }
 }
