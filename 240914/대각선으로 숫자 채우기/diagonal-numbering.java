@@ -11,7 +11,7 @@ public class Main {
         int w = 0;
         int check = 0;
         int t = 0;
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < m - 1; i++) {
             k=0;
             w = i;
             x[k][w] = g++;
@@ -28,7 +28,7 @@ public class Main {
 
         }
 
-        g=g-t;
+
         
         for (int i=0;i<n;i++){
             k=i;
