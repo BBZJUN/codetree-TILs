@@ -16,7 +16,7 @@ public class Main {
             for (; ;){
                 k++;
                 w--;
-                if(w<0){
+                if(w<0 && k>=n){
                     break;
                 }
                 x[k][w] = g++;
