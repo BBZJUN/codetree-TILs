@@ -28,7 +28,7 @@ public class Main {
 
         }
 
-        if (n>1 && m!=1){
+        if (n>1 || m!=1){
 
             g=g-t;
         }
