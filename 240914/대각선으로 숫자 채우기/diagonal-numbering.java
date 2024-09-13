@@ -27,7 +27,7 @@ public class Main {
         }
         if (check==1){
 
-            g=g-m;
+            g=g-n;
         }
         for (int i=0;i<n;i++){
             k=i;
