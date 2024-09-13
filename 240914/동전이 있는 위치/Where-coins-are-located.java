@@ -10,7 +10,7 @@ public class Main {
         for (int i = 0; i<m;i++){
             int x = sc.nextInt();
             int y = sc.nextInt();
-            arr[x][y] = 1;
+            arr[x-1][y-1] = 1;
         }
 
         // 출력
