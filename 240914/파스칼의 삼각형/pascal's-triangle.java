@@ -24,15 +24,15 @@ public class Main {
         }
 
         // 출력
-        int j=0;
         for (int i = 0; i < n; i++) {
-            for (j = 0; j < n; j++) {
+            for (int j = 0; j < n; j++) {
                 System.out.print(x[i][j] + " ");
+                if(i==j){
+                    continue;
+            }
             }
             System.out.println();
-            if(i==j){
-                continue;
-            }
+            
         }
     }
 }
