@@ -7,12 +7,12 @@ public class Main {
         int[][] x = new int[n][n]; 
 
         for (int i = 0; i<n;i++){
-            x[0][i] = 0;
-            x[i][0] = 0;
+            x[0][i] = 1;
+            x[i][0] = 1;
         }
 
         for (int i = 1; i<n;i++){
-            for (int j = 1; j<i;j++){
+            for (int j = 1; j<n;j++){
                 x[i][j] = x[i-1][j-1] + x[i-1][j] + x[i][j-1];
             }
         }
