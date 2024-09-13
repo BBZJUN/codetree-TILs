@@ -39,7 +39,7 @@ public class Main {
             for (; ;){
                 k++;
                 w--;
-                if(k>=n || w<=0){
+                if(k>=n || w<0){
                     break;
                 }
                 x[k][w] = g++;
