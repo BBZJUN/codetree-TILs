@@ -10,10 +10,12 @@ public class Main {
         int k = 0;
         int w = 0;
         int check = 0;
+        int t = 0;
         for (int i = 0; i < m; i++) {
             k=0;
             w = i;
             x[k][w] = g++;
+            t++;
             for (; ;){
                 k++;
                 w--;
@@ -25,9 +27,17 @@ public class Main {
             check=1;
 
         }
+        for (int i = 0; i < n; i++) {
+            
+            for (int j = 0; j < m; j++){
+                System.out.print(x[i][j]+" ");
+            }
+            System.out.println();
+            
+        }
         if (check==1){
 
-            g=g-n;
+            g=g-t;
         }
         for (int i=0;i<n;i++){
             k=i;
@@ -43,7 +53,6 @@ public class Main {
             }
 
         }
-    
         for (int i = 0; i < n; i++) {
             
             for (int j = 0; j < m; j++){
@@ -52,5 +61,7 @@ public class Main {
             System.out.println();
             
         }
+    
+        
     }
 }
