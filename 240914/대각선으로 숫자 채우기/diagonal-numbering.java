@@ -9,6 +9,7 @@ public class Main {
         int g = 1;
         int k = 0;
         int w = 0;
+        int check = 0;
         for (int i = 0; i < m; i++) {
             k=0;
             w = i;
@@ -21,9 +22,14 @@ public class Main {
                 }
                 x[k][w] = g++;
             }
+            check=1;
 
         }
-        for (int i=1;i<n;i++){
+        if (check==1){
+
+            g=g-m;
+        }
+        for (int i=0;i<n;i++){
             k=i;
             w = m-1;
             x[k][w] = g++;
