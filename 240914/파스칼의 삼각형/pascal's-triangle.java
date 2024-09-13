@@ -18,7 +18,7 @@ public class Main {
         }
 
         for (int i = 1; i<n;i++){
-            for (int j = 0; j<i;j++){
+            for (int j = 1; j<i;j++){
                 x[i][j] = x[i-1][j-1] + x[i-1][j];
             }
         }
