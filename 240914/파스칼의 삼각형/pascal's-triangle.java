@@ -28,7 +28,7 @@ public class Main {
             for (int j = 0; j < n; j++) {
                 System.out.print(x[i][j] + " ");
                 if(i==j){
-                    continue;
+                    break;
             }
             }
             System.out.println();
