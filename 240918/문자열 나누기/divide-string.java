@@ -18,7 +18,7 @@ public class Main {
             
         }
         for (int i = 0; i<x.length() ; i++){
-            if(i%5==0){
+            if(i!=0&&i%5==0){
                 System.out.println();
             }
             System.out.print(x.charAt(i));
