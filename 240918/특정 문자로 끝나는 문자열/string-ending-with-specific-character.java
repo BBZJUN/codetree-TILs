@@ -13,7 +13,7 @@ public class Main {
 
 
         for (int i=0; i<10;i++){
-            if (arr[arr[i].length()-1]==x){
+            if (arr[i].charAt(arr[i].length()-1)==x){
                 System.out.println(arr[i]);
             }
             
