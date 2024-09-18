@@ -14,7 +14,7 @@ public class Main {
             System.out.print(str2+" "+str2.length());
         }
         else{
-            System.out.print("smae");
+            System.out.print("same");
         }
 
     }
