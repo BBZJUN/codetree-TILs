@@ -7,7 +7,7 @@ public class Main {
         String str = sc.nextLine();
         char s = sc.next().charAt(0);
         int c = 0;
-        for (int i = 0; i<str.lenght(); i++){
+        for (int i = 0; i<str.length(); i++){
             if (str.charAt(i)==s){
                 c++;
             }
