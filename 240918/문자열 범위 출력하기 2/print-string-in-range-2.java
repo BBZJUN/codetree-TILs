@@ -6,7 +6,15 @@ public class Main {
 
         String str = sc.next();
         int n = sc.nextInt();
-        for(int i = 0; i < n; i++)
-            System.out.print(str.charAt(str.length()-i-1));
+        if(n>sc.length()){
+            for(int i = 0; i < sc.length(); i++){
+                System.out.print(str.charAt(str.length()-i-1));
+            }
+        }
+        else{
+            for(int i = 0; i < n; i++){
+                System.out.print(str.charAt(str.length()-i-1));
+            }
+        }
     }
 }
