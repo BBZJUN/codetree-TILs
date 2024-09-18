@@ -24,7 +24,7 @@ public class Main {
             
             
         }
-        System.out.printf("%d %.2f",c,(double)sum/c)
+        System.out.printf("%d %.2f",c,(double)sum/c);
         
     }
 }
