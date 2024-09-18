@@ -9,7 +9,7 @@ public class Main {
         char x = sc.next().charAt(0);
         int c=0;
         for (int i=0 ;i<5;i++){
-            if (arr[i].charAt[2]==x || arr[i].charAt[3]==x ){
+            if (arr[i].charAt(2)==x || arr[i].charAt(3)==x ){
                 System.out.println(arr[i]);
                 c++;
             }
