@@ -9,7 +9,7 @@ public class Main {
 
         int c = 0;
         for (int i=0; i<re.length(); i++){
-            c+=Integer.parseInt(re.charAt(i));
+            c+=Integer.parseInt(String.valueOf(re.charAt(i)));
         }
 
         System.out.print(c);
