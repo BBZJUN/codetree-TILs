@@ -9,10 +9,10 @@ public class Main {
         char check2 = s.charAt(1);
         for (int i = 0; i<s.length(); i++){
             if (s.charAt(i)==check1){
-                s.charAt(i) = check2;
+                s[i] = check2;
             }
             else if (s.charAt(i)==check2){
-                s.charAt(i) = check1;
+                s[i] = check1;
             }
         }
 
