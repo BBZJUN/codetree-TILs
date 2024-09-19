@@ -7,17 +7,16 @@ public class Main {
         String s = sc.next();
         int q = sc.nextInt();
         char[] arr = s.toCharArray();
-        String result="";
         for (int i=0 ; i<q; i++){
             int n = sc.nextInt();
             if (n==1){
                 int A = sc.nextInt();
                 int B = sc.nextInt();
                 
-                char tmp = arr[A];
-                arr[A] = arr[B];
-                arr[B] = tmp;
-                result = String.valueOf(arr);
+                char tmp = arr[A-1];
+                arr[A-1] = arr[B-1];
+                arr[B-1] = tmp;
+                s = String.valueOf(arr);
             }
             else if (n==2){
                 char a = sc.next().charAt(0);
@@ -29,9 +28,9 @@ public class Main {
                     }
                     
                 }
-                result = String.valueOf(arr);
+                s = String.valueOf(arr);
             }
-            System.out.println(result);
+            System.out.println(s);
         }
     }
 }
