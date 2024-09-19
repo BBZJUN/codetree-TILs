@@ -7,7 +7,7 @@ public class Main {
         String s = sc.next();
         int q = sc.nextInt();
         char[] arr = s.toCharArray();
-        String result;
+        String result="";
         for (int i=0 ; i<q; i++){
             int n = sc.nextInt();
             if (n==1){
