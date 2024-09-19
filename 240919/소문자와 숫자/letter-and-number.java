@@ -13,7 +13,7 @@ public class Main {
                 
                 System.out.print((char)(arr[i]+32));
             }
-            else if{(arr[i]>='0' && arr[i]<='9')
+            else if(arr[i]>='0' && arr[i]<='9'){
                 System.out.print(arr[i]);
             }
         }
