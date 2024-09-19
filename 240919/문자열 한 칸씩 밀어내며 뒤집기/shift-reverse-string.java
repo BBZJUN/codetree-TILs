@@ -14,11 +14,13 @@ public class Main {
                 s=s.substring(s.length()-1,s.length())+s.substring(0,s.length()-1);
             }
             else if(n==3){
-                String tmp ="";
-                for (int k=s.length(); k>0 ;k--){
-                    tmp=tmp+s.substring(k-1,k);
+                char[] arr = s.toCharArray();
+                for (int k=0; k<s.length()/2 ;k++){
+                    char tmp = arr[k];
+                    arr[k] = arr[s.length()-1-k];
+                    arr[s.length()-1-k] = tmp;
                 }
-                s=tmp;
+                s=String.valueOf(arr);
             }
             
             System.out.println(s);
