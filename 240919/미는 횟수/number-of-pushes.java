@@ -9,7 +9,7 @@ public class Main {
         for (int i=0; i<a.length(); i++){
             a = a.substring(a.length()-1, a.length()) + a.substring(0,a.length()-1);
             if(a.compareTo(b)==0){
-                System.out.println(i);
+                System.out.println(i+1);
                 check=1;
                 break;
             }
