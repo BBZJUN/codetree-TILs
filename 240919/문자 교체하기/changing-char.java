@@ -7,6 +7,6 @@ public class Main {
         String s1 = sc.next();
         String s2 = sc.next();
 
-        System.out.print(s1.subString(0,3)+s2.subString(2,));
+        System.out.print(s1.subString(0,3)+s2.subString(2,s2.length()-1));
     }
 }
