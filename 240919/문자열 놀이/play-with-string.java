@@ -7,6 +7,7 @@ public class Main {
         String s = sc.next();
         int q = sc.nextInt();
         char[] arr = s.toCharArray();
+        String result;
         for (int i=0 ; i<q; i++){
             int n = sc.nextInt();
             if (n==1){
@@ -16,7 +17,7 @@ public class Main {
                 char tmp = arr[A];
                 arr[A] = arr[B];
                 arr[B] = tmp;
-                String result = String.valueOf(arr);
+                result = String.valueOf(arr);
             }
             else if (n==2){
                 char a = sc.next().charAt(0);
@@ -28,7 +29,7 @@ public class Main {
                     }
                     
                 }
-                String result = String.valueOf(arr);
+                result = String.valueOf(arr);
             }
             System.out.println(result);
         }
