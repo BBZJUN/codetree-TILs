@@ -12,7 +12,7 @@ public class Main {
             pre = (char)(a-1);
         }
         
-        System.out.print(next);
+        System.out.print(pre);
         
     }
 }
