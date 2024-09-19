@@ -19,6 +19,7 @@ public class Main {
                 for (int k=s.length(); k>0 ;k--){
                     tmp=tmp+s.substring(k-1,k);
                 }
+                s=tmp;
             }
             
             System.out.println(s);
