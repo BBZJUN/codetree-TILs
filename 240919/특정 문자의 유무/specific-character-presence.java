@@ -8,7 +8,7 @@ public class Main {
         String check1 = "No";
         String check2 = "No";
 
-        for (int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length() - 1; i++) {
             if (s.substring(i, i + 2).equals("ee")) {
                 check1 = "Yes";
             }
