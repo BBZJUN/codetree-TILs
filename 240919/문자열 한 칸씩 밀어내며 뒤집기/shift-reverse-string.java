@@ -5,7 +5,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         int q = sc.nextInt();
-        System.out.println(s);
         for (int i=0 ;i<q; i++){
             int n = sc.nextInt();
             if (n==1){
