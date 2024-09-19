@@ -23,7 +23,7 @@ public class Main {
         tmp = 0;
 
         for (int i=0; i<b.length(); i++){
-            if (b.charAt(i)>='0' &&b.charAt(i)<='9'){
+            if (b.charAt(i)>='0' && b.charAt(i)<='9'){
                 tmp = 1;
                 bb+=b.charAt(i);
             }
@@ -34,7 +34,7 @@ public class Main {
             }
         }
 
-        System.out.print(Integer.parseInt(a)+Integer.parseInt(b));
+        System.out.print(Integer.parseInt(aa)+Integer.parseInt(bb));
         
     }
 }
