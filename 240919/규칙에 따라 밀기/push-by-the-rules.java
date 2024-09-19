@@ -11,7 +11,7 @@ public class Main {
                 s= s.substring(1,s.length())+s.substring(0,1);
             }
             else if(arr[i]=='R'){
-                s= s.substring(s.length() - 1,s.length())+s.substring(1,s.length()-1);
+                s= s.substring(s.length() - 1,s.length())+s.substring(0,s.length()-1);
             }
         }
         System.out.print(s);
