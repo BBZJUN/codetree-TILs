@@ -11,7 +11,7 @@ public class Main {
 
         int c = 0;
         for (int i=0; i<re.length(); i++){
-            if (a.charAt(i)=='1'){
+            if (re.charAt(i)=='1'){
                 c++;
             }
         }
