@@ -6,7 +6,7 @@ public class Main {
 
         String s1 = sc.next();
         String s2 = sc.next();
-        int len = s2.length()-1;
+        int len = s2.length();
         System.out.print(s1.substring(0,2)+s2.substring(2,len));
     }
 }
