@@ -10,7 +10,7 @@ public class Main {
         char[] arr = s.toCharArray();
         arr[1] = 'a';
         arr[len-2] = 'a';
-        String s = String.valueOf(arr);
+        s = String.valueOf(arr);
         
         
         System.out.print(s);
