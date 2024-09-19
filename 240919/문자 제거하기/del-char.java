@@ -15,7 +15,7 @@ public class Main {
             else{
                 s=s.substring(0,x)+s.substring(x+1,s.length());
             }
-            SYstem.out.println(s);
+            System.out.println(s);
         }
     }
 }
