@@ -10,7 +10,7 @@ public class Main {
         int index = -1;
 
         for (int i = 0; i < s.length(); i++) {
-            if (s.equals(c)) {
+            if (s.charAt(i)==(c)) {
                 index=i;
                 break;
             }
