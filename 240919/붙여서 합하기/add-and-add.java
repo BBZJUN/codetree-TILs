@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
         String b = sc.next();
-        System.out.print(Integer.paseInt(a+b)+Integer.paseInt(b+a));
+        System.out.print(Integer.parseInt(a+b)+Integer.parseInt(b+a));
         
     }
 }
