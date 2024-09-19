@@ -9,8 +9,8 @@ public class Main {
                 break;
             }
             int x = sc.nextInt();
-            if(x>=s.length()-1){
-                s=s.substring(0,s.length()-2);
+            if(x>=s.length()){
+                s=s.substring(0,s.length()-1);
             }
             else{
                 s=s.substring(0,x)+s.substring(x+1,s.length());
