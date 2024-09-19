@@ -8,7 +8,7 @@ public class Main {
         for ( ; ; ){
             if (s.contains(cut)){
                 int loc = s.indexOf(cut);
-                s=s.substring(0,loc)+s.substring(loc+1,s.length());
+                s=s.substring(0,loc)+s.substring(loc+cut.length(),s.length());
             }
             else{
                 break;
