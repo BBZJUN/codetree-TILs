@@ -7,11 +7,12 @@ public class Main {
         int n = sc.nextInt();
         int g = 9;
         for (int i=0 ;i<n;i++){
-            if (g==0){
-                g=9;
-            }
+            
             for (int j=0;j<n;j++){
                 System.out.print(g--);
+                if (g==0){
+                    g=9;
+                }
             }
             System.out.println();
         }
