@@ -12,11 +12,12 @@ public class Main {
             }
             for (int j=0; j<n-i;j++){
                 System.out.print((char)(tmp++)+" ");
-                if(tmp=='Z'){
+                if(tmp==91){
                     tmp=65;
                 }
             }
             System.out.println();
         }
+        
     }
 }
