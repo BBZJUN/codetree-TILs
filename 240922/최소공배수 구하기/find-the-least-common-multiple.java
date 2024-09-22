@@ -12,7 +12,7 @@ public class Main {
 
     public static void f(int n, int m){
         int re = n*m;
-        for (int i=0; i<=Math.min(n,m), i++){
+        for (int i=0; i<=Math.min(n,m); i++){
             if (n%i==0 && m%i==0){
                 re = i*(n/i)*(m/i);
             }
