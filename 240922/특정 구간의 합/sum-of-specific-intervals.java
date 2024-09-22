@@ -14,7 +14,12 @@ public class Main {
         for (int i=0 ; i<m; i++){
             int a1 = sc.nextInt();
             int a2 = sc.nextInt();
-            System.out.println(arr[a1+1]+arr[a2+1]);
+            int sum = 0;
+            for (int j=a1-1; j<a2; j++)
+            {
+                sum+=arr[j];
+            }
+            System.out.println(sum);
         }
     }
 }
