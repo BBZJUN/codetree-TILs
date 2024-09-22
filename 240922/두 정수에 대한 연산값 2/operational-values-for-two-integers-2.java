@@ -30,7 +30,7 @@ public class Main {
         IntW a = new IntW(q);
         IntW b = new IntW(w);
         f(a,b);
-        System.out.print(a+" "+b);
+        System.out.print(a.val+" "+b.val);
         
     }
 }
