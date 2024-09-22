@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static final int MAX_N = 50;
 
-    
+    public static int n;
 
     public static void modify(int[] arr) {
         for(int i = 0; i < n; i++)
@@ -14,9 +14,8 @@ public class Main {
     public static void main(String[] args) {
         // 변수 선언 및 입력:
         Scanner sc = new Scanner(System.in);
-        int n;
-        int[] arr = new int[MAX_N];
         n = sc.nextInt();
+        int[] arr = new int[MAX_N];
         for(int i = 0; i < n; i++)
             arr[i] = sc.nextInt();
 
