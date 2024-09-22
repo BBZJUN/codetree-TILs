@@ -1,8 +1,18 @@
+import java.util.Scanner;
+
 public class Main {
+    public static boolean isMagicNumber(int n) {
+        return n % 2 == 0 && (n / 10 + (n % 10)) % 5 == 0;
+    }
+    
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
-        System.out.println(15 % 3 != 0 && 15 % 5 == 0);
+        // 변수 선언 및 입력:
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         
-        System.out.println(20 % 3 != 0 && 20 % 5 == 0);
+        if(isMagicNumber(n))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
     }
 }
