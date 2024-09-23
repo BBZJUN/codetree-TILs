@@ -7,9 +7,9 @@ public class Main {
             return c;
     
         if(a % 2 == 0)
-            return countNumber(a / 2,c++);
+            return countNumber(a / 2,c+=1);
         else
-            return countNumber(3 * a + 1, c++);
+            return countNumber(3 * a + 1, c+=1);
     }
 
     public static void main(String[] args) {
