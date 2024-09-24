@@ -14,7 +14,7 @@ public class Main {
             arr[i] = sc.nextInt();
             if ((i+1)%2==1){
                 Arrays.sort(arr,0,i+1);
-                System.out.print(arr[i/2]+" ")
+                System.out.print(arr[i/2]+" ");
             }
         }
     }
