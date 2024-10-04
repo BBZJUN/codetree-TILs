@@ -30,7 +30,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        Student[] students = new Student[MAXN];
+        Student[] students = new Student[n];
 
         for (int i = 0; i < n; i++){
             String name = sc.next();
