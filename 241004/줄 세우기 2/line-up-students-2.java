@@ -5,10 +5,12 @@ import java.util.Arrays;
 class X implements Comparable<X> {
     int k;
     int m;
+    int index;
 
-    public X(int k, int m) {
+    public X(int k, int m, int index) {
         this.k = k;
         this.m = m;
+        this.index = index;
     }
 
     @Override
@@ -31,7 +33,7 @@ public class Main {
         for(int i = 0; i < n; i++) {
             int k = sc.nextInt();
             int m = sc.nextInt();
-            arr[i] = new X(k, m);
+            arr[i] = new X(k, m,(i+1));
         }
 
 
@@ -39,7 +41,7 @@ public class Main {
 
 
         for(int i = 0; i < n; i++) 
-            System.out.println(arr[i].k+" "+arr[i].m+" "+(i+1));
+            System.out.println(arr[i].k+" "+arr[i].m+" "+arr[i].index);
 
     }
 }
