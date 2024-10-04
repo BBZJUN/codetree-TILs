@@ -32,10 +32,19 @@ public class Main {
         
 
         int fa = 0;
-        for(int i = 1; i < n; i++) {
-            System.out.println(www[i].weth);
-            if(www[i].date.compareTo(www[fa].date) < 0 && www[i].weth.equals("Rain"))
-                fa = i;
+        for(int i = 0; i < n; i++) {
+            //System.out.println(www[i].weth);
+            if(www[i].weth.equals("Rain"))
+            {
+                if (fa == 0){
+                    fa = i;
+                }
+                if(www[i].date.compareTo(www[fa].date) < 0)
+                {
+                    fa = i;
+                }
+                
+            }
         }
 
         // 결과를 출력합니다.
