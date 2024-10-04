@@ -33,7 +33,7 @@ public class Main {
 
         int fa = 0;
         for(int i = 1; i < n; i++) {
-            //System.out.println(www[i].weth);
+            System.out.println(www[i].weth);
             if(www[i].date.compareTo(www[fa].date) < 0 && www[i].weth.equals("Rain"))
                 fa = i;
         }
