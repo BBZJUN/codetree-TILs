@@ -14,13 +14,12 @@ class Person {
 };
 
 public class Main {
-    public static int MAXN = 10;
 
-    public static Person[] people = new Person[MAXN];
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+        int MAXN = 10;
+        Person[] people = new Person[MAXN];
         // 변수 선언 및 입력
         int n = sc.nextInt();
         
