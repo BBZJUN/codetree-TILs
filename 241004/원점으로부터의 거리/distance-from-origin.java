@@ -13,10 +13,10 @@ class Point implements Comparable<Point> {
     @Override
     public int compareTo(Point point) {
         // dist가 작으면 정렬 했을 때 앞에 와야 합니다.
-        if(this.dist != point.dist)
-            return this.dist - point.dist;
+        if(dist != point.dist)
+            return dist - point.dist;
         // index가 작으면 정렬 했을 때 앞에 와야 합니다.
-        return this.index - point.index;
+        return index - point.index;
     }
 }
 
