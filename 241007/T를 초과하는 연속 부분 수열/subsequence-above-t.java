@@ -14,10 +14,13 @@ public class Main {
             int k = sc.nextInt();
             if (i>0 && k>t && k>pre ){
                 count++;
-                
+                System.out.println(k + "  "+count);
             }
             else{
                 count=0;
+                if(i==0){
+                    count=1;
+                }
             }
 
             max = Math.max(count,max);
