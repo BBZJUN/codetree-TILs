@@ -12,16 +12,18 @@ public class Main {
         int max = 0;
         for (int i=0; i<n; i++){
             int k = sc.nextInt();
-            if (i>0 && k>t && k>pre ){
-                count++;
-                
+            if (i<=0){
+                pre = k;
             }
             else{
-                count=0;
-                if(i==0){
-                    count=1;
+                if (k>t && k>pre){
+                    count++;
+                }
+                else{
+                    count = 1;
                 }
             }
+        
 
             max = Math.max(count,max);
 
