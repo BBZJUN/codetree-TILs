@@ -7,13 +7,16 @@ public class Main {
 
         int n = sc.nextInt();
         int t = sc.nextInt();
-        int count = 1;
+        int count = 0;
         int pre = 0;
         int max = 0;
         for (int i=0; i<n; i++){
             int k = sc.nextInt();
-            if (i<=0){
+            if (i==0){
                 pre = k;
+                if (k>t){
+                    count++;
+                }
             }
             else{
                 if (k>t && k>pre){
