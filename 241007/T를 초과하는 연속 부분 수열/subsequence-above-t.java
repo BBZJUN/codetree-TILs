@@ -14,7 +14,7 @@ public class Main {
             int k = sc.nextInt();
             if (i>0 && k>t && k>pre ){
                 count++;
-                System.out.println(k + "  "+count);
+                
             }
             else{
                 count=0;
