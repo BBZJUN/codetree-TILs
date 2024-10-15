@@ -8,8 +8,8 @@ public class Main {
         int N = sc.nextInt();
         int M = sc.nextInt();
         
-        int[][] A = new int[N][2];
-        int[][] B = new int[M][2];
+        int[][] A = new int[N][2]; // A의 속도와 시간 정보
+        int[][] B = new int[M][2]; // B의 속도와 시간 정보
         
         for (int i = 0; i < N; i++) {
             A[i][0] = sc.nextInt(); // 속도
@@ -21,30 +21,20 @@ public class Main {
             B[i][1] = sc.nextInt(); // 시간
         }
         
-        // A와 B의 현재 위치
-        int aPosition = 0;
-        int bPosition = 0;
+        int aIndex = 0, bIndex = 0; // A와 B의 현재 이동 구간 인덱스
+        int aPosition = 0, bPosition = 0; // A와 B의 현재 위치
+        int aTimeLeft = A[aIndex][1], bTimeLeft = B[bIndex][1]; // 남은 시간
+        int lastLeader = 0; // 마지막 선두 (0: 동점, 1: A, 2: B)
+        int changes = 0; // 명예의 전당 변경 횟수
+        int currentTime = 0; // 현재까지 진행된 총 시간
         
-        // A와 B가 각각 이동하는 시간에 대한 인덱스
-        int aIndex = 0;
-        int bIndex = 0;
-        
-        // A와 B의 현재 남은 시간
-        int aTimeLeft = A[aIndex][1];
-        int bTimeLeft = B[bIndex][1];
-        
-        // 초기 선두 (동점으로 시작할 수 있으므로 설정 필요)
-        int lastLeader = 0; // 0: 동점, 1: A가 선두, 2: B가 선두
-        int changes = 0;
-        
-        // 총 시간 동안 반복 (A와 B가 총 이동한 시간은 동일하다고 가정)
         while (aIndex < N && bIndex < M) {
-            // 현재 이동할 시간(최소 남은 시간)
-            int currentTime = Math.min(aTimeLeft, bTimeLeft);
+            int timeStep = Math.min(aTimeLeft, bTimeLeft); // 이번 구간에서 진행할 시간
             
-            // A와 B의 현재 속도로 해당 시간 동안 이동
-            aPosition += A[aIndex][0] * currentTime;
-            bPosition += B[bIndex][0] * currentTime;
+            // A와 B의 위치를 시간 구간 동안 업데이트
+            aPosition += A[aIndex][0] * timeStep;
+            bPosition += B[bIndex][0] * timeStep;
+            currentTime += timeStep; // 현재 시간을 업데이트
             
             // 현재 선두를 결정
             int currentLeader;
@@ -62,17 +52,17 @@ public class Main {
                 lastLeader = currentLeader;
             }
             
-            // 시간이 흐른 후 A와 B의 남은 시간을 갱신
-            aTimeLeft -= currentTime;
-            bTimeLeft -= currentTime;
+            // 시간이 지난 후 각자의 남은 시간을 업데이트
+            aTimeLeft -= timeStep;
+            bTimeLeft -= timeStep;
             
-            // A의 현재 이동이 끝났다면 다음 구간으로 넘어감
+            // A의 현재 구간이 끝났다면 다음 구간으로 이동
             if (aTimeLeft == 0 && aIndex < N - 1) {
                 aIndex++;
                 aTimeLeft = A[aIndex][1];
             }
             
-            // B의 현재 이동이 끝났다면 다음 구간으로 넘어감
+            // B의 현재 구간이 끝났다면 다음 구간으로 이동
             if (bTimeLeft == 0 && bIndex < M - 1) {
                 bIndex++;
                 bTimeLeft = B[bIndex][1];
